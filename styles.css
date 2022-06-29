@@ -1,0 +1,68 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+table {
+    border: 2px solid blue;
+    margin: 10px 20px;
+    min-width: 600px;
+
+}
+
+.code {
+    font-family: "Lucida Sans Typewriter", monospace;
+    background-color: #1f2f2f;
+    color: greenyellow;
+    display: block;
+    font-family: monospace;
+    white-space: pre-line;
+    padding: 20px;
+    line-height: 1.5em;
+    text-align: left;
+    width: fit-content;
+    min-width: 600px;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.codesnippet {
+    margin: 10px 20px;
+}
+
+.codesnippet p {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+td {
+    padding: 5px 15px;
+}
+
+thead {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.title {
+    border: 1px solid black;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 3px;
+    margin: 20px;
+    border-top: 2px solid black;
+}
+
+.tag { 
+    font-family: monospace;
+    text-align: center;
+    background-color: bisque;
+    margin: 5px 15px;
+    padding: 5px;
+}
