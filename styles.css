@@ -3,14 +3,17 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #f8f8ff;
 }
 
 table {
-    border: 2px solid blue;
+    border: 2px solid lightgray;
     margin: 10px 20px;
     min-width: 600px;
 
+}
+.title {
+    background-color:lightgray;
 }
 
 .code {
@@ -51,12 +54,22 @@ thead {
     border: 1px solid black;
 }
 
-header {
+h1 {
     font-size: xx-large;
     font-weight: bolder;
     padding: 3px;
     margin: 20px;
     border-top: 2px solid black;
+}
+
+footer {
+    padding: 1px 10px;
+    margin: 20px;
+    background-color: #add8e6;
+}
+
+a {
+    margin: 20px;
 }
 
 .tag { 

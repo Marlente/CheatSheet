@@ -7,7 +7,7 @@
     <body>
         <!--       GENEREL SETUP            -->
         <section>
-            <header>HTML general setup</header>
+            <h1>HTML general setup</h1>
             <table>
                 <thead>
                     <td class="title">Tag</td>
@@ -40,6 +40,7 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="https://id.wikipedia.org/wiki/HTML">Learn More</a>
             <div class="codesnippet">
                 <p>Code Example for the general setup</p>
                 <div class="code">
@@ -92,7 +93,7 @@
         </section>
         <!--       TABLES                   -->
         <section>
-            <header>HTML tables</header>
+            <h1>HTML tables</h1>
             <table>
                 <thead>
                     <td class="title">Tag</td>
@@ -132,6 +133,7 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="https://www.w3schools.com/html/html_tables.asp">Learn More</a>
             <div class="codesnippet">
                 <p>Code Example for setup</p>
                 <div class="code">
@@ -199,7 +201,7 @@
         </section>
         <!--       CSS VISUALIZATION        -->
         <section>
-            <header>CSS font visualization</header>
+            <h1>CSS font visualization</h1>
             <table>
                 <thead>
                     <td class="title">Variable</td>
@@ -223,31 +225,39 @@
                         <td>Defines font style</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
-                        <td></td>
+                        <td class="tag">@font-face</td>
+                        <td>src</td>
+                        <td>integrate external fonts files</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tag"></td>
-                        <td></td>
-                        <td></td>
+                        <td class="tag">line-height</td>
+                        <td>10px</td>
+                        <td>declares vertical spacing between lines of text</td>
                     </tr>
                 </tbody>
             </table>
+            <a href="https://scalablecss.com/setup-custom-fonts-with-font-face/">Learn More</a>
             <div class="codesnippet">
                 <p>CSS Code Example for font setup</p>
                 <div class="code">
-
+                    * {
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                    
+                    body {
+                        background-color: #f8f8ff;
+                    }
+                    
+                    table {
+                        border: 2px solid lightgray;
+                        margin: 10px 20px;
+                        min-width: 600px;
+                    }
                 </div>
         </section>
         <!--       HTML FORMS               -->
         <section>
-            <header>HTML forms</header>
+            <h1>HTML forms</h1>
             <table>
                 <thead>
                     <td class="title">Tag</td>
@@ -255,65 +265,74 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
+                        <td class="tag">&lt;input&gt;</td>
+                        <td>element is used to render a variety of input fields on a webpage</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
+                        <td class="tag">&lt;textarea&gt;</td>
+                        <td>used to create a text-box for multi-line input</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
+                        <td class="tag">&lt;form&gt;</td>
+                        <td>Used to collect and send information to an external source&gt;</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
+                        <td class="tag">&lt;select&gt;</td>
+                        <td>can be used to create a dropdown list</td>
                     </tr>
                     <tr>
-                        <td class="tag"></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tag"></td>
-                        <td></td>
+                        <td class="tag">&lt;datalist&gt;</td>
+                        <td>can be used to achieve search/autocomplete functionalities</td>
                     </tr>
                 </tbody>
             </table>
+            <a href="https://id.wikipedia.org/wiki/HTML">Learn More</a>
             <div class="codesnippet">
                 <p>HTML Code Example for initialiting a form</p>
                 <div class="code">
-                    &lt;form&gt;
+                    &lt;form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm"&gt;
+                        &lt;p&gt;
+                        &lt;label&gt;Name
+                        &lt;input type="text" name="customer_name" required&gt;
+                        &lt;/label&gt;
+                        &lt;/p&gt;
+                        
+                        &lt;p&gt;
+                        &lt;label&gt;Phone 
+                        &lt;input type="tel" name="phone_number"&gt;
+                        &lt;/label&gt;
+                        &lt;/p&gt;
+        
+                        &lt;p&gt;
+                        &lt;label&gt;Email 
+                        &lt;input type="email" name="email_address"&gt;
+                        &lt;/label&gt;
+                        &lt;/p&gt;
 
-                    &lt;fieldset&gt;
-                    &lt;legend&gt;Describes fieldset&lt;/legend&gt;
+                        &lt;fieldset&gt;
+                        &lt;legend&gt;Which taxi do you require?&lt;/legend&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="radio" name="taxi" required value="car"&gt; Car &lt;/label&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="radio" name="taxi" required value="van"&gt; Van &lt;/label&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="radio" name="taxi" required value="tuktuk"&gt; Tuk Tuk &lt;/label&gt;&lt;/p&gt;
+                        &lt;/fieldset&gt;
 
-                    &lt;p&gt;
-                    &lt;input type="radio" name="vertical" id="option1" value="top"&gt;
-                    &lt;label for="option1"&gt;Top&lt;/label&gt;
-                    &lt;/p&gt;
-
-                    &lt;p&gt;
-                    &lt;label for="option2"&gt;
-                        &lt;input type="radio" name="vertical" id="option2" value="bottom"&gt; Bottom
-                    &lt;/label&gt;
-                    &lt;/p&gt;
-
-                    &lt;p&gt;
-                    &lt;label for="horizontal"&gt;
-                        Horizontal:
-                    &lt;/label&gt;
-                    &lt;select id="horizontal" name="horizontal"&gt;
-                        &lt;option value="left"&gt;Left&lt;/option&gt;
-                        &lt;option value="middle"&gt;Middle&lt;/option&gt;
-                        &lt;option value="right"&gt;Right&lt;/option&gt;
-                    &lt;/select&gt;
-                    &lt;/p&gt;
-
-                    &lt;/fieldset&gt;
-
-                    &lt;/form&gt;
+                        &lt;fieldset&gt;
+                        &lt;legend&gt;Extras&lt;/legend&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="checkbox" name="extras" value="baby"&gt; Baby Seat &lt;/label&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="checkbox" name="extras" value="wheelchair"&gt; Wheelchair Access &lt;/label&gt;&lt;/p&gt;
+                        &lt;p&gt;&lt;label&gt; &lt;input type="checkbox" name="extras" value="tip"&gt; Stock Tip &lt;/label&gt;&lt;/p&gt;
+                        &lt;/fieldset&gt;
+                    
+                        &lt;/form&gt;
                 </div>
         </section>
     </body>
+    <footer>
+        <p>The date of your visit on this page:</p>
+        <div class="date">
+            <script>document.write(new Date().toLocaleDateString());</script>
+        </div>
+        <p>Marlo Kürner © 2022</p>
+    </footer>
 </html>
+
